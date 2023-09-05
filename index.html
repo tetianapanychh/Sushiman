@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sushiman</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230824130145">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a data-goto=".hero" href="#" class="header__logo logo">Sushiman</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a data-goto=".about" data-goto-header href="#" class="menu__link">About us</a>
+						</li>
+						<li class="menu__item">
+							<a data-goto=".foods" data-goto-header href="#" class="menu__link">Foods</a>
+						</li>
+						<li class="menu__item">
+							<a data-goto=".trending" data-goto-header href="#" class="menu__link">Trending</a>
+						</li>
+						<li class="menu__item">
+							<a data-goto=".newsletter" data-goto-header href="#" class="menu__link">Newsletter</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main data-fp data-fp-bullets data-fp-effect="slider" class="page">
+			<section data-fp-section class="page__hero hero">
+				<div data-fullscreen class="hero__container">
+					<div class="hero__image-block">
+						<div class="hero__text hero__text_small animation animation_scale anim-no-hide">日<br>本<br>食</div>
+						<div class="hero__text hero__text_big animation animation_scale anim-no-hide">日本食</div>
+						<img class="hero__image animation animation_left anim-no-hide" src="img/hero/sushi-illustration.svg" alt="Illustration of sushi">
+					</div>
+					<div class="hero__content content-hero">
+						<div class="content-hero__top">
+							<h1 class="content-hero__title title title_big animation animation_down">Feel the taste of Japanese
+								foods</h1>
+							<div class="content-hero__text text animation animation_down">
+								<p>
+									Feel the taste of most populars Japanese foods from anywhere and anytime.
+								</p>
+							</div>
+							<div class="content-hero__actions animation animation_down">
+								<button data-popup="#popup-order" type="button" class="content-hero__button button button_regular">Order now</button>
+								<div class="content-hero__video">
+									<button data-popup="#popup-video" type="button" class="content-hero__video-button _icon-play-button" aria-label="Open video"></button>
+									<div class="content-hero__video-text">How to order</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-hero__bottom animation animation_down anim-no-hide">
+							<div class="content-hero__counter">
+								<div class="content-hero__number">
+									24K+
+								</div>
+								<div class="content-hero__text-counter">Happy customers</div>
+							</div>
+							<div class="content-hero__review-block">
+								<div class="content-hero__review-avatar">
+									<picture><source srcset="img/hero/client-avatar.webp" type="image/webp"><img src="img/hero/client-avatar.jpg" alt="Photo of customer"></picture>
+								</div>
+								<div class="content-hero__review">“This is the best Japanese food delivery service that ever
+									exist”</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section data-fp-section class="page__about about">
+				<div data-fullscreen class="about__container">
+					<div class="about__images">
+						<div class="about__row">
+							<div class="about__image animation animation_scale anim-no-hide">
+								<img src="img/about/illustration-1.svg" alt="Illustration of sushi">
+							</div>
+							<div class="about__images-label animation animation_left">
+								ツ <br> ナ
+							</div>
+						</div>
+						<div class="about__row">
+							<div class="about__image animation animation_scale anim-no-hide">
+								<img src="img/about/illustration-2.svg" alt="Illustration of sushi">
+							</div>
+							<div class="about__images-label animation animation_left">
+								エ <br> ビ
+							</div>
+						</div>
+					</div>
+					<div class="about__content">
+						<div class="about__subtitle subtitle animation animation_down">About Us / 私たちに関しては</div>
+						<h2 class="about__title title title_medium animation animation_down">Our mission is to bring true
+							Japanese flavours to you.
+						</h2>
+						<div class="about__text text animation animation_down">
+							<p>
+								We will continue to provide the experience of Omotenashi, the Japanese mindset of hospitality,
+								with our shopping and dining for our customers.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__foods foods">
+				<div data-fullscreen class="foods__container">
+					<div class="foods__body">
+						<h2 class="foods__title title title_medium animation animation_down">Popular Foods / 人気 </h2>
+						<div class="foods__navigation animation animation_down">
+							<button data-category="all" class="foods__button button button_small active">All</button>
+							<button data-category="sushi" class="foods__button button_sushi button button_small">Sushi</button>
+							<button data-category="ramen" class="foods__button button_ramen button button_small">Ramen</button>
+							<button data-category="udon" class="foods__button button_udon button button_small">Udon</button>
+							<button data-category="dango" class="foods__button button_dango button button_small">Dango</button>
+						</div>
+						<div class="foods__items swiper animation animation_down">
+							<div class="foods__wrapper swiper-wrapper">
+								<div data-category="sushi" class="foods__item item-food swiper-slide">
+									<div class="item-food__icon">
+										<img src="img/foods/sushi.svg" alt="Sushi icon">
+									</div>
+									<h3 class="item-food__title title title_small">Nigiri sushi</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.7</span>
+										</div>
+										<div class="item-food__price">$16.00</div>
+									</div>
+								</div>
+								<div data-category="sushi" class="foods__item item-food swiper-slide sushi">
+									<div class="item-food__icon">
+										<img src="img/foods/chezu-sushi.svg" alt="Sushi icon">
+									</div>
+									<h3 class="item-food__title title title_small"> Sushi</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.8</span>
+										</div>
+										<div class="item-food__price">$17.00</div>
+									</div>
+								</div>
+								<div data-category="sushi" class="foods__item item-food swiper-slide sushi">
+									<div class="item-food__icon">
+										<img src="img/foods/originale-sushi.svg" alt="Sushi icon">
+									</div>
+									<h3 class="item-food__title title title_small">Nigiri sushi</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.9</span>
+										</div>
+										<div class="item-food__price">$14.00</div>
+									</div>
+								</div>
+								<div data-category="sushi" class="foods__item item-food swiper-slide sushi">
+									<div class="item-food__icon">
+										<img src="img/foods/maki-sushi.svg" alt="Sushi icon">
+									</div>
+									<h3 class="item-food__title title title_small">Maki sushi</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">5.0</span>
+										</div>
+										<div class="item-food__price">$14.00</div>
+									</div>
+								</div>
+								<div data-category="ramen" class="foods__item item-food swiper-slide">
+									<div class="item-food__icon">
+										<img src="img/foods/ramen.svg" alt="Ramen icon">
+									</div>
+									<h3 class="item-food__title title title_small">Ramen</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.9</span>
+										</div>
+										<div class="item-food__price">$16.00</div>
+									</div>
+								</div>
+								<div data-category="ramen" class="foods__item item-food swiper-slide ramen">
+									<div class="item-food__icon">
+										<img src="img/foods/ramen-1.svg" alt="Ramen icon">
+									</div>
+									<h3 class="item-food__title title title_small">Miso Ramen</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.8</span>
+										</div>
+										<div class="item-food__price">$19.00</div>
+									</div>
+								</div>
+								<div data-category="udon" class="foods__item item-food swiper-slide udon">
+									<div class="item-food__icon">
+										<img src="img/foods/udon-noodle.svg" alt="Udon icon">
+									</div>
+									<h3 class="item-food__title title title_small">Udon noodle</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.9</span>
+										</div>
+										<div class="item-food__price">$15.00</div>
+									</div>
+								</div>
+								<div data-category="udon" class="foods__item item-food swiper-slide udon">
+									<div class="item-food__icon">
+										<img src="img/foods/udon.svg" alt="Udon icon">
+									</div>
+									<h3 class="item-food__title title title_small">Udon</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.9</span>
+										</div>
+										<div class="item-food__price">$13.00</div>
+									</div>
+								</div>
+								<div data-category="dango" class="foods__item item-food swiper-slide dango">
+									<div class="item-food__icon">
+										<img src="img/foods/dango.svg" alt="Dango icon">
+									</div>
+									<h3 class="item-food__title title title_small">Mitarashi dango</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">5.0</span>
+										</div>
+										<div class="item-food__price">$10.00</div>
+									</div>
+								</div>
+								<div data-category="dango" class="foods__item item-food swiper-slide dango">
+									<div class="item-food__icon">
+										<img src="img/foods/mitarashi-dango-1.svg" alt="Dango icon">
+									</div>
+									<h3 class="item-food__title title title_small">Dango</h3>
+									<div class="item-food__info">
+										<div class="item-food__rating">
+											<img src="img/foods/star.svg" alt="Icon Star">
+											<span class="item-food__number">4.7</span>
+										</div>
+										<div class="item-food__price">$12.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="foods__slider-nav">
+								<button type="button" class="foods__arrow foods__arrow_prev _icon-arrow" aria-label="Button to the previous slide"></button>
+								<button type="button" class="foods__arrow foods__arrow_next _icon-arrow" aria-label="Button to the next slide"></button>
+							</div>
+						</div>
+						<div class="foods__bottom animation animation_down">
+							<button data-popup="#popup-order" type="button" class="foods__button-order button button_regular">Order now</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__trending trending">
+				<div data-fullscreen class="trending__container">
+					<div class="trending__row">
+						<div class="trending__content trending__content_left">
+							<div class="trending__subtitle subtitle animation animation_down">
+								What’s Trending / トレンド
+							</div>
+							<h2 class="trending__title title title_medium animation animation_down">Japanese Sushi</h2>
+							<div class="trending__text text animation animation_down">
+								<p>
+									Feel the taste of most delicious Sushi here.
+								</p>
+							</div>
+							<div class="trending__list animation animation_down">
+								<ul>
+									<li class="trending__item">
+										Maki Sushi
+									</li>
+									<li class="trending__item">
+										Nigiri Sushi
+									</li>
+									<li class="trending__item">
+										Oshizushi
+									</li>
+								</ul>
+								<ul>
+									<li class="trending__item">
+										Temaki Sushi
+									</li>
+									<li class="trending__item">
+										Uramaki Sushi
+									</li>
+									<li class="trending__item">
+										Inari Sushi
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="trending__image-block">
+							<div class="trending__decor trending__decor_right animation animation_scale anim-no-hide">
+								ツ <br>ナ
+							</div>
+							<img class="animation animation_scale anim-no-hide" src="img/trending/food-icon.svg" alt="Icon of sushi">
+						</div>
+					</div>
+					<div class="trending__row">
+						<div class="trending__image-block">
+							<div class="trending__decor trending__decor_left animation animation_scale anim-no-hide">
+								飲 <br>む
+							</div>
+							<img class="animation animation_scale anim-no-hide" src="img/trending/drinks-icon.svg" alt="Icon of drink">
+						</div>
+						<div class="trending__content trending__content_right">
+							<div class="trending__subtitle subtitle animation animation_down">
+								What’s Trending / トレンド
+							</div>
+							<h2 class="trending__title title title_medium animation animation_down">Japanese Drinks</h2>
+							<div class="trending__text text animation animation_down">
+								<p>
+									Feel the taste of most delicious Japanese drinks here.
+								</p>
+							</div>
+							<div class="trending__list animation animation_down">
+								<ul>
+									<li class="trending__item">
+										Oruncha
+									</li>
+									<li class="trending__item">
+										Ofukucha
+									</li>
+									<li class="trending__item">
+										Ofukucha
+									</li>
+								</ul>
+								<ul>
+									<li class="trending__item">
+										Kombu-cha
+									</li>
+									<li class="trending__item">
+										Aojiru
+									</li>
+									<li class="trending__item">
+										Mugicha
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__newsletter newsletter">
+				<div data-fullscreen class="newsletter__container">
+					<div class="newsletter__decor newsletter__decor_left animation animation_scale anim-no-hide">寿 <br> エ
+						<br>司 <br> エ <br>司
+					</div>
+					<div class="newsletter__body">
+						<h2 class="newsletter__title title title_big animation animation_down">Get offers straight
+							to your inbox</h2>
+						<div class="newsletter__text text animation animation_down">
+							<p>
+								Sign up for the Sushiman newsletter.
+							</p>
+						</div>
+						<form action="#" class="newsletter__form animation animation_down">
+							<input data-required="email" type="text" name="form[]" placeholder="Enter email address" data-error="Incorrect email" class="newsletter__input input">
+							<button type="submit" class="newsletter__button button button_regular">Get started</button>
+						</form>
+					</div>
+					<div class="newsletter__decor newsletter__decor_right animation animation_scale anim-no-hide">日
+						<br>司<br>本 <br> 食 <br> エ
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="footer__container">
+						<div class="footer__logo logo">
+							Sushi<span>man</span>
+						</div>
+						<ul class="footer__menu">
+							<li class="footer__item">
+								<a data-goto=".about" href="#" class="footer__link">About Us</a>
+							</li>
+							<li class="footer__item">
+								<a data-goto=".about" href="#" class="footer__link">Foods</a>
+							</li>
+							<li class="footer__item">
+								<a data-goto=".about" href="#" class="footer__link">Trending</a>
+							</li>
+						</ul>
+						<ul class="footer__social social">
+							<li class="social__item">
+								<a href="#" class="social__link _icon-facebook" aria-label="Link to facebook page"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link _icon-twitter" aria-label="Link to twitter page"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link _icon-instagram" aria-label="Link to instagram page"></a>
+							</li>
+						</ul>
+					</div>
+				</footer>
+			</section>
+		</main>
+	</div>
+	<!-- Стилі для body -->
+
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 1.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fff;
+			}
+
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 30rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.fls-preloader__icon {
+				width: 10rem;
+				height: 10rem;
+			}
+
+			.fls-preloader__text-block {
+				animation: preloader 3s linear;
+			}
+
+			.fls-preloader__text {
+				font-family: "Playfair Display";
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 1.5rem;
+				line-height: 1.3333333333;
+				color: #ab383e;
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				const preloaderTemplate = `
+				<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__text-block">
+								<p class="fls-preloader__text">Sushiman</p>
+							</div>
+						</div>
+				</div>
+			`;
+
+				document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+				const preloader = document.querySelector('.fls-preloader');
+				const htmlDocument = document.documentElement;
+
+				htmlDocument.classList.add('loading');
+				htmlDocument.classList.add('lock');
+
+				window.addEventListener('load', addLoadedClass);
+
+				function addLoadedClass() {
+					htmlDocument.classList.add('loaded');
+					htmlDocument.classList.remove('lock');
+					htmlDocument.classList.remove('loading');
+
+					preloaderContainer.classList.add('fls-preloader--loaded');
+
+					const textBlock = document.querySelector('.fls-preloader__text-block');
+
+					setTimeout(() => {
+						preloader.remove();
+						preloaderContainer.remove();
+					}, 400);
+				}
+			}
+
+			preloader();
+		</script>
+	</div>
+	<div id="popup-video" aria-hidden="true" class="popup popup-video">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<button aria-label="Close the pop up" data-close type="button" class="popup__close">
+						<img src="img/cross.svg" alt="Icon cross">
+					</button>
+				</div>
+				<div class="popup__body">
+					<video class="popup-video__video" controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ============================ -->
+	<div id="popup-order" aria-hidden="true" class="popup popup-order">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-order__content">
+				<div class="popup__top">
+					<button aria-label="Close the pop up" data-close type="button" class="popup__close">
+						<img src="img/cross.svg" alt="Icon cross">
+					</button>
+				</div>
+				<div class="popup__body">
+					<div class="popup-order__title">Write your personal information and our operator will contact you as soon as
+						possible!</div>
+					<form class="popup-order__form form">
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Full name *" class="form__input input">
+						<input data-required="email" autocomplete="off" type="text" name="form[]" placeholder="Your email *" class="form__input input">
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Your phone number *" class="form__input input">
+						<button type="submit" class="form__button button button_small">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230824130145"></script>
+</body>
+
+</html>
