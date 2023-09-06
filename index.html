@@ -514,21 +514,18 @@
 				htmlDocument.classList.add('loading');
 				htmlDocument.classList.add('lock');
 
-				window.addEventListener('load', addLoadedClass);
+				window.addEventListener('load', function () {
+					setTimeout(() => {
+						preloader.remove();
+						preloaderContainer.remove();
+						addLoadedClass()
+					}, 500);
+				});
 
 				function addLoadedClass() {
 					htmlDocument.classList.add('loaded');
 					htmlDocument.classList.remove('lock');
 					htmlDocument.classList.remove('loading');
-
-					preloaderContainer.classList.add('fls-preloader--loaded');
-
-					const textBlock = document.querySelector('.fls-preloader__text-block');
-
-					setTimeout(() => {
-						preloader.remove();
-						preloaderContainer.remove();
-					}, 400);
 				}
 			}
 
